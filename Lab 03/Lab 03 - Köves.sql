@@ -27,14 +27,12 @@ WHERE city = 'Dallas';
 -- Query 5: "List the names of agents not in New York and not in Tokyo."
 SELECT name
 FROM agents
-WHERE city != 'New York' 
-  AND city != 'Tokyo';
+WHERE city NOT IN ('New York', 'Tokyo');
 
 -- Query 6: "List all data for products not in Dallas or Duluth that cost US$1 or more."
 SELECT *
 FROM products
-WHERE city != 'Dallas'
-  AND city != 'Duluth'
+WHERE city NOT IN ('Dallas', 'Duluth')
   AND priceUSD >= 1;
 
 -- Query 7: "List all data for orders in January or March."
