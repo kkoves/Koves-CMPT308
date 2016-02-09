@@ -5,7 +5,7 @@
 --    Date: 2/9/2016                                                |
 ---------------------------------------------------------------------
 
--- Query 1: "List the ordno and	dollars	of all orders."
+-- Query 1: "List the order number and total dollars of all orders."
 SELECT ordnum, totalUSD
 FROM orders;
 
@@ -14,7 +14,7 @@ SELECT name, city
 FROM agents
 WHERE name = 'Smith';
 
--- Query 3: "List the pid, name, and priceUSD of products with quantity more than 208,00."
+-- Query 3: "List the id, name, and priceUSD of products with quantity more than 208,000."
 SELECT pid, name, priceUSD
 FROM products
 WHERE quantity > 208000;
@@ -27,7 +27,8 @@ WHERE city = 'Dallas';
 -- Query 5: "List the names of agents not in New York and not in Tokyo."
 SELECT name
 FROM agents
-WHERE city != 'New York' AND city != 'Tokyo';
+WHERE city != 'New York' 
+  AND city != 'Tokyo';
 
 -- Query 6: "List all data for products not in Dallas or Duluth that cost US$1 or more."
 SELECT *
