@@ -50,7 +50,7 @@ SELECT DISTINCT pid
 FROM orders
 WHERE cid NOT IN (SELECT cid
                   FROM orders
-                  WHERE aid = 'a01'
+                  WHERE aid = 'a07'
                  )
     UNION
 SELECT products.pid
