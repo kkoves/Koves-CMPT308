@@ -1,7 +1,7 @@
 ﻿---------------------------------------------------------------------
 --   Title: Lab 6 SQL Script                                        |
 -- Purpose: Makes 6 queries based on the description for Lab 6, and |
---          answers a question about outer joins.
+--          answers a question about outer joins.                   |
 --  Author: Krisztián Köves                                         |
 --    Date: 3/1/2016                                                |
 ---------------------------------------------------------------------
