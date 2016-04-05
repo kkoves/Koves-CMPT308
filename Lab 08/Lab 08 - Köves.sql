@@ -132,8 +132,10 @@ WHERE Directors.pid IN(SELECT DISTINCT Directors.pid --People.name
                                     FROM Movies, MovieActors
                                     WHERE pid IN(SELECT pid
                                                  FROM People
-                                                 WHERE name = 'Sean Connery')
-                                                 AND Movies.mid = MovieActors.mid
+                                                 WHERE name = 'Sean Connery'
+                                                )
+                                      AND Movies.mid = MovieActors.mid
                                    )
-                       AND Directors.pid = MovieDirectors.pid)
+                       AND Directors.pid = MovieDirectors.pid
+                      )
 AND People.pid = Directors.pid;
